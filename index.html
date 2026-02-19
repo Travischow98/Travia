@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trivia Sprint</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Trivia Sprint</h1>
+    <p class="subtitle">Answer 5 random questions and test your knowledge.</p>
+
+    <section class="card" id="game-card">
+      <div class="hud">
+        <span id="question-count">Question 1 / 5</span>
+        <span id="score">Score: 0</span>
+      </div>
+
+      <h2 id="question">Loading question…</h2>
+      <div id="answers" class="answers"></div>
+
+      <div class="actions">
+        <button id="next-btn" disabled>Next Question</button>
+        <button id="restart-btn" class="secondary">Restart</button>
+      </div>
+
+      <p id="feedback" class="feedback"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
