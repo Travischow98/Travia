@@ -1,0 +1,122 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #eef2ff, #f4f9ff);
+  color: #1f2937;
+  display: grid;
+  place-items: center;
+}
+
+.app {
+  width: min(680px, 92vw);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  text-align: center;
+  margin-top: 0;
+  color: #4b5563;
+}
+
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 1.2rem;
+  box-shadow: 0 10px 30px rgba(31, 41, 55, 0.12);
+}
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.8rem;
+}
+
+.answers {
+  display: grid;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.answer {
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 0.75rem 0.9rem;
+  text-align: left;
+  cursor: pointer;
+  transition: 120ms ease;
+}
+
+.answer:hover:not(:disabled) {
+  background: #eef2ff;
+  border-color: #a5b4fc;
+}
+
+.answer:disabled {
+  cursor: not-allowed;
+}
+
+.answer.correct {
+  background: #dcfce7;
+  border-color: #16a34a;
+}
+
+.answer.wrong {
+  background: #fee2e2;
+  border-color: #dc2626;
+}
+
+.actions {
+  display: flex;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 0.65rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button.secondary {
+  background: #6b7280;
+}
+
+.feedback {
+  min-height: 1.2rem;
+  margin-top: 0.75rem;
+  font-weight: 600;
+}
+
+.feedback.good {
+  color: #15803d;
+}
+
+.feedback.bad {
+  color: #b91c1c;
+}
